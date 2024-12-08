@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 급식 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>학교 급식 정보</h1>
+        
+        <div class="date-selector">
+            <input type="month" id="monthPicker">
+            <button onclick="getMealInfo()">조회하기</button>
+        </div>
+
+        <div class="meal-container">
+            <div id="mealList"></div>
+        </div>
+
+        <div id="nutritionInfo" class="nutrition-info"></div>
+        <div id="originInfo" class="origin-info"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
